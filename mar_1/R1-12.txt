@@ -1,0 +1,12 @@
+
+balance equals 10000
+interest rate equals 1.005
+time equals 0
+withdraw equals 500
+
+while balance is greater than withdraw
+	balance equals balance times rate minus 500;
+	increment time;
+end while loop
+time is divided by 12 months
+print time to screen

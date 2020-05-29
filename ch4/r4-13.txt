@@ -1,0 +1,34 @@
+get dayOfWeek
+get daysInMonth
+set counter to zero
+
+print weekDayNames
+
+FOR items in range of weekDayNames
+	string space plus equals three spaces
+	counter increments by one
+ENDFOR
+
+print out space variable;
+
+FOR items in range of daysInMonth
+	IF counter is greater six
+		set counter to zero
+		print out endline
+
+		IF item is less than 10
+			print item plus a two spaces
+		ENDIF 
+
+		IF item is greater than or equal to ten
+			print item plus a single space
+		ENDIF
+	ELSE
+		IF item is less than 10
+			print out item plus double space
+		ELSE
+			print out item plus single space
+		ENDIF
+	ENDIF
+	increment counter by one
+ENDFOR

@@ -1,0 +1,2 @@
+The interface of a class is the behavior of a class without implementation.
+Implementation carries out the instructions defined in the interface.

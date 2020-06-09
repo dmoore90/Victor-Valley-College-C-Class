@@ -10,7 +10,7 @@ int main(int argc, char* argv[])
 {
 	string search_word = argv[1];
 	string word, line;
-	i = 2;
+	int i = 2;
 	vector <string> vec_line;
 
 	while (i < argc)

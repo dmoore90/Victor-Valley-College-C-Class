@@ -1,6 +1,0 @@
-a. 0x7fffe0d79f50 -- beginning memory address
-b. 2 pointer's target memory address value
-c. 0x7fffe0d79f70 memory address of 4th value
-d. 11 4th value of primes array
-e. 11 4th value of primes array
-f. 0x7fffe0d79f70 memory address of 4th value

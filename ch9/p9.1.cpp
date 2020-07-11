@@ -7,56 +7,47 @@ class Microwave
 {
 private:
    int time;
-   int power_level;
+   string power_level;
 public:
    Microwave () {
-   		cout << "Enter options: " << endl
-   		<< "1: increase time by 30 seconds" << endl
-   		<< "2: increase power level" << endl
-   		<< "3: start" << endl
-   		<< "4: reset:" << endl
-   		<< "5: stop" << endl;
-		time = 0;
-		power_level = 0;
+		time = 30;
+		power_level = "low";
    }
 
    void increase_time()
    {
    		time += 30;
-   		cout << "Time: " << time << endl;
    }
 
    void switch_power_level()
    {
-   		power_level += 1;
-   		cout << "Power level " << power_level << endl;
+   		if (power_level == "low") {
+            power_level = "high";
+         } else {
+            power_level = "low";
+         }
    }
 
    void start()
    {
-   		if (power_level == 0) {
-   			cout << "Error no power level is zero" << endl;
-   		}
-   		else if (time == 0) {
-   			cout << "Error no time selected" << endl;
-   		}
-   		else {
-   			cout << "Cooking for " << time << " seconds at level " 
-   			<< " power_level " << power_level << endl;
-   		}
+		cout << "Cooking for " << time << " seconds at level " 
+		<< " power_level " << power_level << endl;
    }
    void reset()
    {
-   		time = 0;
-   		power_level = 0;
-   		cout << "Time: " << time << endl
-   		<< "Power level: " << power_level << endl;
+   		time = 30;
+   		power_level = "low";
    }
-
 };
 
 int main()
 {
+   cout << "Enter options: " << endl
+   << "1: increase time by 30 seconds" << endl
+   << "2: Switch Power level" << endl
+   << "3: start" << endl
+   << "4: reset:" << endl
+   << "5: stop" << endl;
 	Microwave microwave;
 	int option;
 	cin >> option;
